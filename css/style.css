@@ -859,4 +859,19 @@ body {
         max-width: 300px;
         text-align: center;
     }
+    /* Disclaimer Styles */
+.disclaimer {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid #e53e3e;
+    }
+
+.disclaimer p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.4;
+    }
 }
