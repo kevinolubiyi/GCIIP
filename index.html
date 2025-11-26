@@ -41,26 +41,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-    /* EMERGENCY MOBILE MENU FIX */
-    @media (max-width: 768px) {
-        .nav-list:not(.active) {
-            display: none !important;
-        }
-        .nav-list.active {
-            display: flex !important;
-            position: fixed !important;
-            top: 70px !important;
-            left: 0 !important;
-            width: 100% !important;
-            background: white !important;
-            flex-direction: column !important;
-            padding: 30px 20px !important;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
-            z-index: 1000 !important;
-        }
-    }
-</style>
 </head>
 <body>
     <!-- Header -->
@@ -152,134 +132,133 @@
         </div>
     </section>
 
-    <!-- Add this section right after the Hero section -->
+    <!-- Visionary Section -->
     <section id="visionary" class="section visionary">
-    <div class="container">
-        <div class="visionary-header">
-            <h2>The Visionary Behind GCIIP</h2>
-            <p>From a Single Conviction to a Global Operating System for Planetary Integrity</p>
-        </div>
-        
-        <div class="visionary-content">
-            <div class="visionary-profile">
-                <div class="profile-image">
-                    <img src="images/kevin-photo.jpg" alt="Kevin Olubiyi">
-                    <div class="image-overlay">
-                        <span>Founder & Research Lead</span>
+        <div class="container">
+            <div class="visionary-header">
+                <h2>The Visionary Behind GCIIP</h2>
+                <p>From a Single Conviction to a Global Operating System for Planetary Integrity</p>
+            </div>
+            
+            <div class="visionary-content">
+                <div class="visionary-profile">
+                    <div class="profile-image">
+                        <img src="images/kevin-photo.jpg" alt="Kevin Olubiyi">
+                        <div class="image-overlay">
+                            <span>Founder & Research Lead</span>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Kevin Olubiyi</h3>
+                        <p class="title">Sustainable Systems Architect & GCIIP Founder</p>
+                        <div class="quote-card">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <blockquote>
+                                "Happiness comes from WHAT we do. Fulfillment comes from WHY we do it."
+                                <cite>- Simon Sinek</cite>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
-                <div class="profile-info">
-                    <h3>Kevin Olubiyi</h3>
-                    <p class="title">Sustainable Systems Architect & GCIIP Founder</p>
-                    <div class="quote-card">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
+                
+                <div class="visionary-story">
+                    <div class="story-tabs">
+                        <button class="story-tab active" data-tab="journey">The Journey</button>
+                        <button class="story-tab" data-tab="catalyst">The Catalyst</button>
+                        <button class="story-tab" data-tab="synthesis">The Synthesis</button>
+                        <button class="story-tab" data-tab="research">Research Partnership</button>
+                    </div>
+                    
+                    <div class="story-content">
+                        <div class="story-pane active" id="journey">
+                            <h4>From Skills to Purpose</h4>
+                            <p>This philosophy ignited my journey from mastering AI, Cybersecurity, and Business Strategy to architecting GCIIP. For years, I collected the "WHATs" - the skills and accolades - until I discovered my ultimate WHY: to redesign our economic system to value planetary health.</p>
+                            <p>GCIIP represents the synthesis of this multidisciplinary expertise into a single, powerful mission: to make planetary stewardship the most financially viable choice for every human on Earth.</p>
                         </div>
-                        <blockquote>
-                            "Happiness comes from WHAT we do. Fulfillment comes from WHY we do it."
-                            <cite>- Simon Sinek</cite>
-                        </blockquote>
+                        
+                        <div class="story-pane" id="catalyst">
+                            <h4>Identifying the Fatal Flaw</h4>
+                            <p>While the world debated carbon pricing, I identified the core, unaddressed flaw: the complete lack of a scalable, trustworthy mechanism to verify and value the decentralized power of human action.</p>
+                            <div class="insight-card">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>"The question was never 'how do we price carbon?' but 'how do we architect an entire economy that makes planetary stewardship the most rational choice for humanity?'"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="story-pane" id="synthesis">
+                            <h4>Forging Eden's Legacy</h4>
+                            <p>The GCIIP provides the economic mechanics, but technology alone was insufficient. The human spirit required an equal transformation.</p>
+                            <p>This led to the creation of the Eden's Legacy Initiative and the Coram Deo Curriculum—a world-class educational framework that grounds cutting-edge science in timeless ethical principles. This is the project's true innovation: uniting economic incentive with moral purpose.</p>
+                            <div class="mandate-card">
+                                <h5>A Mandate for Stewards, Not Users</h5>
+                                <p>My vision does not see participants as "customers," but as Steward-Verifiers—a global vanguard equipped to educate the 80% and protect the system's integrity.</p>
+                                <div class="mandate-stats">
+                                    <div class="mandate-stat">
+                                        <span class="percentage">20%</span>
+                                        <span>Mobilization Target</span>
+                                    </div>
+                                    <div class="mandate-stat">
+                                        <span class="percentage">80%</span>
+                                        <span>Community Impact</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="story-pane" id="research">
+                            <h4>Accelerating Impact Through Academic Research</h4>
+                            <p>To transform GCIIP from blueprint to global reality, I am seeking to further my research in Masters/PhD program that bridges Sustainable Development, Artificial Intelligence, and Cybersecurity.</p>
+                            
+                            <div class="research-benefits">
+                                <div class="benefit-card">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <h5>Institutional Leadership</h5>
+                                    <p>Hosting university becomes the global incubator for the first human-centric carbon economy</p>
+                                </div>
+                                
+                                <div class="benefit-card">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-network-wired"></i>
+                                    </div>
+                                    <h5>Global Network</h5>
+                                    <p>Direct partnership pipeline to UN agencies, governments, and Fortune 500 companies</p>
+                                </div>
+                                
+                                <div class="benefit-card">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-flask"></i>
+                                    </div>
+                                    <h5>Cutting-edge Research</h5>
+                                    <p>Pioneering work in AI verification, blockchain integrity, and behavioral economics</p>
+                                </div>
+                            </div>
+                            
+                            <div class="callout-box">
+                                <h4>Join Me in Building the Economic OS for Our Planet</h4>
+                                <p>I'm not just seeking a degree - I'm seeking research partners to co-create the infrastructure for humanity's sustainable future. The institution that welcomes this research will position itself at the epicenter of climate tech innovation for the 21st century.</p>
+                                <a href="#contact" class="btn btn-primary">Begin a Dialogue</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="visionary-story">
-                <div class="story-tabs">
-                    <button class="story-tab active" data-tab="journey">The Journey</button>
-                    <button class="story-tab" data-tab="catalyst">The Catalyst</button>
-                    <button class="story-tab" data-tab="synthesis">The Synthesis</button>
-                    <button class="story-tab" data-tab="research">Research Partnership</button>
-                </div>
-                
-                <div class="story-content">
-                    <div class="story-pane active" id="journey">
-                        <h4>From Skills to Purpose</h4>
-                        <p>This philosophy ignited my journey from mastering AI, Cybersecurity, and Business Strategy to architecting GCIIP. For years, I collected the "WHATs" - the skills and accolades - until I discovered my ultimate WHY: to redesign our economic system to value planetary health.</p>
-                        <p>GCIIP represents the synthesis of this multidisciplinary expertise into a single, powerful mission: to make planetary stewardship the most financially viable choice for every human on Earth.</p>
-                    </div>
-                    
-                    <div class="story-pane" id="catalyst">
-                        <h4>Identifying the Fatal Flaw</h4>
-                        <p>While the world debated carbon pricing, I identified the core, unaddressed flaw: the complete lack of a scalable, trustworthy mechanism to verify and value the decentralized power of human action.</p>
-                        <div class="insight-card">
-                            <i class="fas fa-lightbulb"></i>
-                            <p>"The question was never 'how do we price carbon?' but 'how do we architect an entire economy that makes planetary stewardship the most rational choice for humanity?'"</p>
-                        </div>
-                    </div>
-                    
-                    <div class="story-pane" id="synthesis">
-                        <h4>Forging Eden's Legacy</h4>
-                        <p>The GCIIP provides the economic mechanics, but technology alone was insufficient. The human spirit required an equal transformation.</p>
-                        <p>This led to the creation of the Eden's Legacy Initiative and the Coram Deo Curriculum—a world-class educational framework that grounds cutting-edge science in timeless ethical principles. This is the project's true innovation: uniting economic incentive with moral purpose.</p>
-                        <div class="mandate-card">
-                            <h5>A Mandate for Stewards, Not Users</h5>
-                            <p>My vision does not see participants as "customers," but as Steward-Verifiers—a global vanguard equipped to educate the 80% and protect the system's integrity.</p>
-                            <div class="mandate-stats">
-                                <div class="mandate-stat">
-                                    <span class="percentage">20%</span>
-                                    <span>Mobilization Target</span>
-                                </div>
-                                <div class="mandate-stat">
-                                    <span class="percentage">80%</span>
-                                    <span>Community Impact</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="story-pane" id="research">
-                        <h4>Accelerating Impact Through Academic Research</h4>
-                        <p>To transform GCIIP from blueprint to global reality, I am seeking to further my research in Masters/PhD program that bridges Sustainable Development, Artificial Intelligence, and Cybersecurity.</p>
-                        
-                        <div class="research-benefits">
-                            <div class="benefit-card">
-                                <div class="benefit-icon">
-                                    <i class="fas fa-university"></i>
-                                </div>
-                                <h5>Institutional Leadership</h5>
-                                <p>Hosting university becomes the global incubator for the first human-centric carbon economy</p>
-                            </div>
-                            
-                            <div class="benefit-card">
-                                <div class="benefit-icon">
-                                    <i class="fas fa-network-wired"></i>
-                                </div>
-                                <h5>Global Network</h5>
-                                <p>Direct partnership pipeline to UN agencies, governments, and Fortune 500 companies</p>
-                            </div>
-                            
-                            <div class="benefit-card">
-                                <div class="benefit-icon">
-                                    <i class="fas fa-flask"></i>
-                                </div>
-                                <h5>Cutting-edge Research</h5>
-                                <p>Pioneering work in AI verification, blockchain integrity, and behavioral economics</p>
-                            </div>
-                        </div>
-                        
-                        <div class="callout-box">
-                            <h4>Join Me in Building the Economic OS for Our Planet</h4>
-                            <p>I'm not just seeking a degree - I'm seeking research partners to co-create the infrastructure for humanity's sustainable future. The institution that welcomes this research will position itself at the epicenter of climate tech innovation for the 21st century.</p>
-                            <a href="#contact" class="btn btn-primary">Begin a Dialogue</a>
-                        </div>
+            <div class="visionary-cta">
+                <div class="cta-content">
+                    <h3>Build the Inevitable.</h3>
+                    <p>This is more than a project; it is a legacy in the making. If you are a leader, an institution, or a nation ready to move beyond incrementalism and co-implement a system designed for true planetary transformation, the architect is ready to speak with you.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Connect with the Founder</a>
+                        <a href="documents/GCIIP-Research-Proposal.pdf" class="btn btn-outline" target="_blank">Research Proposal</a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="visionary-cta">
-            <div class="cta-content">
-                <h3>Build the Inevitable.</h3>
-                <p>This is more than a project; it is a legacy in the making. If you are a leader, an institution, or a nation ready to move beyond incrementalism and co-implement a system designed for true planetary transformation, the architect is ready to speak with you.</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Connect with the Founder</a>
-                    <a href="documents/GCIIP-Research-Proposal.pdf" class="btn btn-outline" target="_blank">Research Proposal</a>
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
-     
 
     <!-- About Section -->
     <section id="about" class="section about">
@@ -640,66 +619,66 @@
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                <h3>Contact & Partnerships</h3>
-            <div class="contact-item">
-        <h4>Sustainable System Architect, Founder & Research Lead</h4>
-        <p>Kevin Olubiyi</p>
-        <p><i class="fas fa-envelope"></i> kevin.olubiyi@gciip.org</p>
-        <p>
-            <a href="https://www.linkedin.com/in/kevinolubiyi-ai" target="_blank" rel="noopener noreferrer" class="linkedin-link">
-                <i class="fab fa-linkedin"></i> linkedin.com/in/kevinolubiyi-ai
-            </a>
-        </p>
-    </div>
-    <div class="contact-item">
-        <h4>Academic Partnerships</h4>
-        <p><i class="fas fa-envelope"></i> consortium@gciip.org</p>
-    </div>
-    <div class="contact-item">
-        <h4>General Inquiries</h4>
-        <p><i class="fas fa-envelope"></i> info@gciip.org</p>
-    </div>
-    <div class="social-links">
-        <a href="https://www.linkedin.com/company/global-carbon-integrity-and-incentive-platform-gciip" target="_blank" rel="noopener noreferrer" title="Follow GCIIP on LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/kevinolubiyi-ai" target="_blank" rel="noopener noreferrer" title="Connect with Kevin Olubiyi">
-            <i class="fas fa-user"></i>
-        </a>
-    </div>
-</div>
+                    <h3>Contact & Partnerships</h3>
+                    <div class="contact-item">
+                        <h4>Sustainable System Architect, Founder & Research Lead</h4>
+                        <p>Kevin Olubiyi</p>
+                        <p><i class="fas fa-envelope"></i> kevin.olubiyi@gciip.org</p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/kevinolubiyi-ai" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                                <i class="fab fa-linkedin"></i> linkedin.com/in/kevinolubiyi-ai
+                            </a>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Academic Partnerships</h4>
+                        <p><i class="fas fa-envelope"></i> consortium@gciip.org</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>General Inquiries</h4>
+                        <p><i class="fas fa-envelope"></i> info@gciip.org</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/global-carbon-integrity-and-incentive-platform-gciip" target="_blank" rel="noopener noreferrer" title="Follow GCIIP on LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kevinolubiyi-ai" target="_blank" rel="noopener noreferrer" title="Connect with Kevin Olubiyi">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </div>
+                </div>
                 <div class="contact-form">
                     <h3>Send Us a Message</h3>
                     <form id="contactForm" action="https://formspree.io/f/mblebaoe" method="POST">
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-        <label for="organization">Organization</label>
-        <input type="text" id="organization" name="organization" required>
-    </div>
-    <div class="form-group">
-        <label for="interest">Area of Interest</label>
-        <select id="interest" name="interest" required>
-            <option value="">Select an option</option>
-            <option value="government">Government Partnership</option>
-            <option value="corporate">Corporate Partnership</option>
-            <option value="academic">Academic Partnership</option>
-            <option value="philanthropy">Philanthropic Support</option>
-            <option value="other">Other</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Send Message</button>
-</form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Organization</label>
+                            <input type="text" id="organization" name="organization" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Area of Interest</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="government">Government Partnership</option>
+                                <option value="corporate">Corporate Partnership</option>
+                                <option value="academic">Academic Partnership</option>
+                                <option value="philanthropy">Philanthropic Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
             </div>
             <div class="official-domains">
@@ -717,7 +696,6 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <!-- In the footer section -->
             <div class="footer-content">
                 <div class="footer-logo">
                     <img src="images/logo.png" alt="GCIIP Logo">
@@ -734,12 +712,12 @@
                         <i class="fab fa-linkedin"></i> Follow Us
                     </a>
                 </div>
-            <div class="footer-copyright">
-                <p>&copy; 2025 GCIIP Foundation. All rights reserved.</p>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 GCIIP Foundation. All rights reserved.</p>
+                </div>
             </div>
         </div>
-        </div>
-        <!-- Add this right before the closing </footer> tag -->
+        
         <div class="footer-note">
             <div class="container">
                 <p class="disclaimer">GCIIP has moved from concept to implementation-ready framework. The complete technical blueprint, master plan, and ecosystem architecture are finalized and available for partner review.</p>
