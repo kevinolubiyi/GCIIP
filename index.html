@@ -41,6 +41,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    /* EMERGENCY MOBILE MENU FIX */
+    @media (max-width: 768px) {
+        .nav-list:not(.active) {
+            display: none !important;
+        }
+        .nav-list.active {
+            display: flex !important;
+            position: fixed !important;
+            top: 70px !important;
+            left: 0 !important;
+            width: 100% !important;
+            background: white !important;
+            flex-direction: column !important;
+            padding: 30px 20px !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+            z-index: 1000 !important;
+        }
+    }
+</style>
 </head>
 <body>
     <!-- Header -->
@@ -137,7 +157,7 @@
         <div class="container">
             <div class="visionary-header">
                 <h2>The Visionary Behind GCIIP</h2>
-                <p>From a Single Conviction to a Global Operating System for Planetary Integrity</p>
+                <p>From a First-Class Business Architect to a Global Operating System for Planetary Integrity</p>
             </div>
             
             <div class="visionary-content">
@@ -174,8 +194,9 @@
                     <div class="story-content">
                         <div class="story-pane active" id="journey">
                             <h4>From Skills to Purpose</h4>
-                            <p>This philosophy ignited my journey from mastering AI, Cybersecurity, and Business Strategy to architecting GCIIP. For years, I collected the "WHATs" - the skills and accolades - until I discovered my ultimate WHY: to redesign our economic system to value planetary health.</p>
-                            <p>GCIIP represents the synthesis of this multidisciplinary expertise into a single, powerful mission: to make planetary stewardship the most financially viable choice for every human on Earth.</p>
+                            <p>My journey moved from collecting the "WHATs" to discovering my ultimate "WHY": to redesign our economic system to value planetary health.</p>
+                            <p>This conviction is now backed by a first-class BBA synthesizing five core disciplines — Business Analytics, AI, Cybersecurity, Brand Strategy, and People Operations — with certified expertise in global project management and cross-cultural communication. This multidisciplinary toolkit was assembled for a single purpose: to architect a viable future.</p>
+                            <p>GCIIP is the synthesis. It is the application of this advanced business architecture to a single, powerful mission: making planetary stewardship the most financially viable choice for every human on Earth.</p>
                         </div>
                         
                         <div class="story-pane" id="catalyst">
