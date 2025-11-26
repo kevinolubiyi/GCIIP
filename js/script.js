@@ -176,30 +176,56 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== CONTACT FORM SUBMISSION =====
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+    /// ===== CONTACT FORM SUBMISSION =====
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Basic form validation
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const organization = document.getElementById('organization').value;
+        const interest = document.getElementById('interest').value;
+        const message = document.getElementById('message').value;
+        
+        if (!name || !email || !organization || !interest || !message) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+        
+        // Get submit button and change text to "Sending..."
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        
+        try {
+            // Send to Formspree
+            const response = await fetch(this.action, {
+                method: 'POST',
+                body: new FormData(this),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
             
-            // Basic form validation
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const organization = document.getElementById('organization').value;
-            const interest = document.getElementById('interest').value;
-            const message = document.getElementById('message').value;
-            
-            if (!name || !email || !organization || !interest || !message) {
-                alert('Please fill in all required fields.');
-                return;
+            if (response.ok) {
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            } else {
+                alert('There was an error submitting your form. Please try again or email us directly.');
             }
-            
-            // In a real implementation, you would send the form data to a server
-            // For this demo, we'll just show a success message
-            alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
-        });
+        } catch (error) {
+            alert('There was an error submitting your form. Please try again or email us directly.');
+        } finally {
+            // Reset button text
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }
+    });
+}
     }
 
     // ===== HEADER SCROLL EFFECT =====
