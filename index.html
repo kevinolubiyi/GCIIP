@@ -670,36 +670,36 @@
 </div>
                 <div class="contact-form">
                     <h3>Send Us a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="organization">Organization</label>
-                            <input type="text" id="organization" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="interest">Area of Interest</label>
-                            <select id="interest" required>
-                                <option value="">Select an option</option>
-                                <option value="government">Government Partnership</option>
-                                <option value="corporate">Corporate Partnership</option>
-                                <option value="academic">Academic Partnership</option>
-                                <option value="philanthropy">Philanthropic Support</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                    <form id="contactForm" action="https://formspree.io/f/mblebaoe" method="POST">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="organization">Organization</label>
+        <input type="text" id="organization" name="organization" required>
+    </div>
+    <div class="form-group">
+        <label for="interest">Area of Interest</label>
+        <select id="interest" name="interest" required>
+            <option value="">Select an option</option>
+            <option value="government">Government Partnership</option>
+            <option value="corporate">Corporate Partnership</option>
+            <option value="academic">Academic Partnership</option>
+            <option value="philanthropy">Philanthropic Support</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
                 </div>
             </div>
             <div class="official-domains">
