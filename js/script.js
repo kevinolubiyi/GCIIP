@@ -176,57 +176,56 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    /// ===== CONTACT FORM SUBMISSION =====
-const contactForm = document.getElementById('contactForm');
+    // ===== CONTACT FORM SUBMISSION =====
+    const contactForm = document.getElementById('contactForm');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        // Basic form validation
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const organization = document.getElementById('organization').value;
-        const interest = document.getElementById('interest').value;
-        const message = document.getElementById('message').value;
-        
-        if (!name || !email || !organization || !interest || !message) {
-            alert('Please fill in all required fields.');
-            return;
-        }
-        
-        // Get submit button and change text to "Sending..."
-        const submitBtn = this.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
-        
-        try {
-            // Send to Formspree
-            const response = await fetch(this.action, {
-                method: 'POST',
-                body: new FormData(this),
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
             
-            if (response.ok) {
-                alert('Thank you for your message! We will get back to you soon.');
-                this.reset();
-            } else {
-                alert('There was an error submitting your form. Please try again or email us directly.');
+            // Basic form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const organization = document.getElementById('organization').value;
+            const interest = document.getElementById('interest').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !organization || !interest || !message) {
+                alert('Please fill in all required fields.');
+                return;
             }
-        } catch (error) {
-            alert('There was an error submitting your form. Please try again or email us directly.');
-        } finally {
-            // Reset button text
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }
-    });
-}
-    }
+            
+            // Get submit button and change text to "Sending..."
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            try {
+                // Send to Formspree
+                const response = await fetch(this.action, {
+                    method: 'POST',
+                    body: new FormData(this),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    alert('Thank you for your message! We will get back to you soon.');
+                    this.reset();
+                } else {
+                    alert('There was an error submitting your form. Please try again or email us directly.');
+                }
+            } catch (error) {
+                alert('There was an error submitting your form. Please try again or email us directly.');
+            } finally {
+                // Reset button text
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    } // REMOVED THE EXTRA CLOSING BRACE THAT WAS HERE
 
     // ===== HEADER SCROLL EFFECT =====
     window.addEventListener('scroll', function() {
