@@ -1681,39 +1681,3 @@ img.lazy.loaded {
         display: flex !important;
     }
 }
-/* Enhanced Logo Styling */
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-}
-
-.logo-abbr {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--primary);
-}
-
-.logo-full {
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: var(--text-light);
-    white-space: nowrap;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .logo-full {
-        display: none;
-    }
-    
-    .logo-abbr {
-        font-size: 1.3rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .logo-full {
-        font-size: 0.8rem;
-    }
-}
