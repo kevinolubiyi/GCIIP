@@ -1681,3 +1681,75 @@ img.lazy.loaded {
         display: flex !important;
     }
 }
+/* Full Name Showcase Styles */
+.full-name-showcase {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.platform-name {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, #ffffff 0%, #e8f5e8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tagline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.verifying, .valuing {
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.verifying {
+    color: #4CAF50; /* Green */
+}
+
+.valuing {
+    color: #FFC107; /* Yellow/Gold */
+}
+
+.dot {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .platform-name {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .tagline {
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .dot {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .platform-name {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+}
