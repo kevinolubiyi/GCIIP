@@ -308,39 +308,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===== COUNTER ANIMATION FOR STATISTICS =====
-    function animateCounters() {
-        const counters = document.querySelectorAll('.stat-number');
-        counters.forEach(counter => {
-            const target = parseInt(counter.textContent.replace(/[^0-9]/g, ''));
-            const increment = target / 100;
-            let current = 0;
-            
-            const updateCounter = () => {
-                if (current < target) {
-                    current += increment;
-                    counter.textContent = Math.ceil(current).toLocaleString();
-                    setTimeout(updateCounter, 20);
-                } else {
-                    counter.textContent = target.toLocaleString();
-                }
-            };
-            updateCounter();
-        });
-    }
+function animateCounters() {
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'), 10);
+        const increment = target / 100;
+        let current = 0;
 
-    // Initialize counters when stats section comes into view
-    const statsSection = document.querySelector('.stats');
-    if (statsSection) {
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    statsObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        statsObserver.observe(statsSection);
+        const updateCounter = () => {
+            if (current < target) {
+                current += increment;
+                counter.textContent = Math.ceil(current).toLocaleString();
+                setTimeout(updateCounter, 20);
+            } else {
+                counter.textContent = target.toLocaleString();
+            }
+        };
+        updateCounter();
+    });
+}
+
+// Initialize counters when stats section comes into view
+const statsSection = document.querySelector('.stats');
+if (statsSection) {
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+                statsObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    statsObserver.observe(statsSection);
+}
     }
 
     // ===== LAZY LOADING FOR IMAGES =====
