@@ -1,809 +1,868 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NAPTIP Evidence Response | Olubiyi vs Olubiyi</title>
     
-    <!-- ===== SEO META TAGS ===== -->
-    <title>GCIIP - Global Carbon Integrity & Incentive Platform | Verifying Value. Valuing Action.</title>
-    <meta name="description" content="GCIIP is a decentralized economic OS that financially rewards verifiable environmental stewardship through Verified Green Acts (VGAs). Join the consortium building planetary resilience.">
-    <meta name="keywords" content="carbon credits, climate action, sustainability, blockchain, VGA, environmental stewardship, GCIIP, carbon market">
-    <meta name="author" content="GCIIP Foundation">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet"/>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <!-- Wavesurfer.js for waveform audio -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/7.7.0/wavesurfer.umd.min.js"></script>
     
-    <!-- ===== FAVICON ===== -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    
-    <!-- ===== THEME COLOR ===== -->
-    <meta name="theme-color" content="#2E7D32">
-    <meta name="msapplication-TileColor" content="#2E7D32">
-    
-    <!-- ===== OPEN GRAPH (Facebook/LinkedIn) ===== -->
-    <meta property="og:title" content="GCIIP - Global Carbon Integrity & Incentive Platform">
-    <meta property="og:description" content="Verifying Value. Valuing Action. A decentralized economic OS that financially rewards verifiable environmental stewardship.">
-    <meta property="og:image" content="https://kevinolubiyi.github.io/GCIIP/images/og-image.jpg">
-    <meta property="og:url" content="https://kevinolubiyi.github.io/GCIIP/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="GCIIP">
-    
-    <!-- ===== TWITTER CARD ===== -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GCIIP - Global Carbon Integrity & Incentive Platform">
-    <meta name="twitter:description" content="Verifying Value. Valuing Action. Transforming citizens into paid planetary stewards.">
-    <meta name="twitter:image" content="https://kevinolubiyi.github.io/GCIIP/images/twitter-card.jpg">
-    <meta name="twitter:site" content="@GCIIP_Platform">
-    
-    <!-- ===== EXTERNAL RESOURCES ===== -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-    /* EMERGENCY MOBILE MENU FIX */
-    @media (max-width: 768px) {
-        .nav-list:not(.active) {
-            display: none !important;
-        }
-        .nav-list.active {
-            display: flex !important;
-            position: fixed !important;
-            top: 70px !important;
-            left: 0 !important;
-            width: 100% !important;
-            background: white !important;
-            flex-direction: column !important;
-            padding: 30px 20px !important;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
-            z-index: 1000 !important;
-        }
-    }
-</style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="#">
-                        <img src="images/logo.png" alt="GCIIP Logo">
-                        <span>GCIIP</span>
-                    </a>
+
+<!-- ============================================================ -->
+<!-- HERO CAROUSEL - FULL-SCREEN BACKGROUND IMAGES                -->
+<!-- ============================================================ -->
+<section class="hero-carousel-wrapper">
+    <div class="hero-carousel" id="heroCarousel">
+        
+        <!-- SLIDE 1: ALBERT - EFCC AMBASSADOR -->
+        <div class="hero-slide" id="slide1">
+            <div class="hero-bg-image" style="background-image: url('images/albert-efcc-ambassador.jpg');">
+                <div class="hero-bg-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-crown"></i> Achievement Under Sole Care</div>
+                <h1 class="hero-title">Albert <span>Olubiyi</span></h1>
+                <div class="hero-subtitle">Youngest EFCC Ambassador</div>
+                <div class="hero-description">
+                    At just 7 years old, Albert has been recognized as the youngest EFCC Ambassador, 
+                    demonstrating exceptional integrity, leadership, and moral character beyond his years.
                 </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#solution">Solution</a></li>
-                        <li><a href="#vga">VGA</a></li>
-                        <li><a href="#ecosystem">Ecosystem</a></li>
-                        <li><a href="#roadmap">Roadmap</a></li>
-                        <li><a href="#contact" class="btn btn-outline">Contact</a></li>
-                    </ul>
-                    <div class="mobile-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Years Old</span>
                     </div>
-                </nav>
+                    <div class="stat">
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">Youngest Ever</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2025</span>
+                        <span class="stat-label">Recognition Year</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: ALBERT - PHONE WINNER -->
+        <div class="hero-slide" id="slide2">
+            <div class="hero-bg-image" style="background-image: url('images/albert-phone-winner.jpg');">
+                <div class="hero-bg-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-trophy"></i> Achievement Under Sole Care</div>
+                <h1 class="hero-title">Albert <span>Olubiyi</span></h1>
+                <div class="hero-subtitle">Winner of Android Phone at Primary 2</div>
+                <div class="hero-description">
+                    Albert won a brand-new Android phone in a competition designed for senior secondary students. 
+                    His victory proves that age is no barrier to excellence when nurtured in a supportive environment.
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">Primary 2</span>
+                        <span class="stat-label">Grade Level</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">VS</span>
+                        <span class="stat-label">Senior Secondary</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">🏆</span>
+                        <span class="stat-label">Overall Winner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: ALBERT - BIBLE QUIZ CHAMPION -->
+        <div class="hero-slide" id="slide3">
+            <div class="hero-bg-image" style="background-image: url('images/albert-bible-quiz.jpg');">
+                <div class="hero-bg-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-bible"></i> Achievement Under Sole Care</div>
+                <h1 class="hero-title">Albert <span>Olubiyi</span></h1>
+                <div class="hero-subtitle">Bible Quiz Champion</div>
+                <div class="hero-description">
+                    Albert emerged as the Niger State Bible Quiz winner and represented the state 
+                    at the North Central regional competition, securing 3rd place. He has read the 
+                    Bible cover-to-cover 4 times and is on his 5th reading.
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">Niger State</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3rd</span>
+                        <span class="stat-label">North Central</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4×</span>
+                        <span class="stat-label">Bible Read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: ANABELLE - ACADEMIC EXCELLENCE -->
+        <div class="hero-slide" id="slide4">
+            <div class="hero-bg-image" style="background-image: url('images/anabelle-academic.jpg');">
+                <div class="hero-bg-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-star"></i> Achievement Under Sole Care</div>
+                <h1 class="hero-title">Annabelle <span>Olubiyi</span></h1>
+                <div class="hero-subtitle">Academic Excellence</div>
+                <div class="hero-description">
+                    At just 5 years old, Annabelle demonstrates strong academic performance with 
+                    excellent results in school. She is thriving in the supportive, nurturing 
+                    environment provided by her father.
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Years Old</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">⭐</span>
+                        <span class="stat-label">Excellent Results</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">🏅</span>
+                        <span class="stat-label">Top Performer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Carousel Navigation Dots -->
+    <div class="carousel-dots" id="carouselDots">
+        <button class="dot active" data-index="0" aria-label="Slide 1: Albert EFCC Ambassador"></button>
+        <button class="dot" data-index="1" aria-label="Slide 2: Albert Phone Winner"></button>
+        <button class="dot" data-index="2" aria-label="Slide 3: Albert Bible Quiz"></button>
+        <button class="dot" data-index="3" aria-label="Slide 4: Annabelle Academic"></button>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous slide">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next slide">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Scroll Indicator -->
+    <div class="carousel-scroll-indicator">
+        <span>Scroll to explore evidence</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- MAIN CONTAINER - EVIDENCE RESPONSE                           -->
+<!-- ============================================================ -->
+<div class="container" id="top">
+
+    <!-- ========== HEADER WITH NAPTIP LOGO ========== -->
+    <header class="header">
+        <div class="header-left">
+            <!-- NAPTIP Logo Placeholder -->
+            <div class="naptip-logo">
+                <div class="logo-icon">
+                    <img src="images/naptip-logo.png" alt="NAPTIP Logo" class="naptip-logo-img" />
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">NAPTIP</span>
+                    <span class="logo-sub">National Agency for the Prohibition of Trafficking in Persons</span>
+                </div>
+            </div>
+</div>
+            <div class="case-badge">
+                <i class="fas fa-file-invoice"></i> EVIDENCE RESPONSE
+            </div>
+            <h1>Kevin Olubiyi <span>vs</span> Adeola Opeyemi Olubiyi</h1>
+            <div class="case-subtitle">Case of Child Neglect &amp; Abuse – Response under VAPP Act</div>
+            <div class="case-description">
+                <i class="fas fa-info-circle"></i> 
+                This site contains evidence of neglect, abandonment, threats, and abuse, organized under the 
+                <strong>Violence Against Persons (Prohibition) Act (VAPP Act)</strong>. It also highlights the 
+                achievements of the children under my sole care.
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="naptip-badge">
+                <i class="fas fa-building-columns"></i>
+                <span>For NAPTIP Investigation Department</span>
+                <span class="badge-sub">To aid and expedite proper judgment</span>
+            </div>
+            <div class="case-meta">
+                <span><i class="fas fa-calendar-day"></i> Response Date: 26 August 2026</span>
+                <span><i class="fas fa-map-pin"></i> Abuja, Nigeria</span>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-<section class="hero">
-    <div class="hero-slider">
-        <!-- NEW: Full Name Showcase Slide -->
-        <div class="slide active">
-            <div class="slide-content">
-                <div class="container">
-                    <div class="full-name-showcase">
-                        <h1 class="platform-name">Global Carbon Integrity<br>& Incentive Platform</h1>
-                        <div class="tagline">
-                            <span class="verifying">Verifying Value</span>
-                            <span class="dot">•</span>
-                            <span class="valuing">Valuing Action</span>
-                        </div>
-                        <div class="hero-buttons">
-                            <a href="#about" class="btn btn-primary">Explore Platform</a>
-                            <a href="#contact" class="btn btn-secondary">Join Consortium</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-bg" style="background-image: url('images/hero-bg-fullname.jpg');"></div>
-        </div>
-        
-        <!-- Existing Slide 1 -->
-        <div class="slide">
-            <div class="slide-content">
-                <div class="container">
-                    <div class="hero-text">
-                        <h1>Verifying Value. Valuing Action.</h1>
-                        <p>The Global Carbon Integrity & Incentive Platform (GCIIP) is a decentralized, technology-driven economic operating system that directly financially rewards verifiable environmental stewardship.</p>
-                        <div class="hero-buttons">
-                            <a href="#about" class="btn btn-primary">Learn More</a>
-                            <a href="documents/GCIIP-WhitePaper.pdf" class="btn btn-secondary" target="_blank">Read Whitepaper</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-bg" style="background-image: url('images/hero-bg-1.jpg');"></div>
-        </div>
-        
-        <!-- Existing Slide 2 -->
-        <div class="slide">
-            <div class="slide-content">
-                <div class="container">
-                    <div class="hero-text">
-                        <h1>Transforming Citizens into Planetary Stewards</h1>
-                        <p>Through Eden's Legacy Initiative, we aim to mobilize 20% of the global population as certified Planetary Stewards, creating a self-sustaining cultural shift.</p>
-                        <div class="hero-buttons">
-                            <a href="#solution" class="btn btn-primary">Our Solution</a>
-                            <a href="#ecosystem" class="btn btn-secondary">Join Ecosystem</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-bg" style="background-image: url('images/hero-bg-2.jpg');"></div>
-        </div>
-        
-        <!-- Existing Slide 3 -->
-        <div class="slide">
-            <div class="slide-content">
-                <div class="container">
-                    <div class="hero-text">
-                        <h1>Verified Green Acts (VGAs)</h1>
-                        <p>A new, high-integrity asset class that transforms everyday environmental actions into financial value, aligning economic incentives with ecological integrity.</p>
-                        <div class="hero-buttons">
-                            <a href="#vga" class="btn btn-primary">Explore VGAs</a>
-                            <a href="#contact" class="btn btn-secondary">Get Involved</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-bg" style="background-image: url('images/hero-bg-3.jpg');"></div>
-        </div>
-    </div>
-    <div class="slider-controls">
-        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-        <div class="slider-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
-    </div>
-</section>
+    <!-- ========== STICKY NAV ========== -->
+    <nav class="nav-tabs" id="navTabs">
+        <a href="#sec-overview" class="active" data-section="overview"><i class="fas fa-circle-info"></i> <span>Overview</span></a>
+        <a href="#sec-neglect" data-section="neglect"><i class="fas fa-child"></i> <span>Neglect</span></a>
+        <a href="#sec-threats" data-section="threats"><i class="fas fa-triangle-exclamation"></i> <span>Threats</span></a>
+        <a href="#sec-abandon" data-section="abandon"><i class="fas fa-door-open"></i> <span>Abandon</span></a>
+        <a href="#sec-false" data-section="false"><i class="fas fa-file-circle-exclamation"></i> <span>False Claims</span></a>
+        <a href="#sec-econ" data-section="econ"><i class="fas fa-coins"></i> <span>Econ Abuse</span></a>
+        <a href="#sec-achievements" data-section="achievements"><i class="fas fa-trophy"></i> <span>Achievements</span></a>
+        <a href="#sec-gen" data-section="gen"><i class="fas fa-tree"></i> <span>Generational</span></a>
+        <a href="#sec-conclusion" data-section="conclusion"><i class="fas fa-gavel"></i> <span>Conclusion</span></a>
+    </nav>
 
-    <!-- ============================== -->
-<!-- INSERT PROJECT STATUS BANNER HERE -->
-<!-- ============================== -->
-<section class="project-status-banner">
-    <div class="container">
-        <p class="status-label">Project Status</p>
-        <p class="status-text">
-            GCIIP is currently a research framework and academic proposal, designed
-            independently by its founder. The technical architecture, curriculum, and
-            governance model described on this site are conceptual — none of it has
-            yet been built, piloted, or adopted by a partner institution. The domain
-            names GCIIP.org, GSEConsortium.org, and AwareDAO.com have been purchased
-            and reserved for this project's future infrastructure; no platform
-            currently operates at any of them. This site is a public design preview. The founder is seeking a fully funded Masters or PhD research position to test, refine, and critically evaluate this framework.
+    <!-- ========== SECTION 1: OVERVIEW ========== -->
+    <section class="section-card" id="sec-overview" data-section="overview">
+        <div class="section-number">Section 1 &bull; VAPP Act Reference</div>
+        <h2><i class="fas fa-circle-info"></i> Case Overview &amp; Response</h2>
+        <div class="meta">
+            <i class="fas fa-gavel"></i> Responding to Petition Filed by Adeola Opeyemi Olubiyi
+            <span class="evidence-badge"><i class="fas fa-microphone"></i> Audio Evidence: 30-40%</span>
+        </div>
+        <p>
+            <strong>This page is prepared for the NAPTIP Investigation Department</strong> to provide a 
+            structured, comprehensive response to the allegations made against me, <strong>Kevin Olubiyi</strong>, 
+            in the petition filed by my wife, <strong>Adeola Opeyemi Olubiyi</strong>.
         </p>
+        <p>
+            The evidence presented below directly contradicts the claims of neglect, abandonment, and abuse. 
+            It demonstrates that I have been the <strong>primary caregiver</strong> providing financial, emotional, 
+            and educational support for our children — <strong>Albert Toluwani Olubiyi</strong> (7 years) and 
+            <strong>Annabelle Ibukunoluwa Olubiyi</strong> (5 years) — since their birth.
+        </p>
+        <div class="evidence-grid">
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <div class="info">
+                    <div class="label">Petition Response Letter</div>
+                    <div class="type">PDF &bull; 0.8 MB</div>
+                </div>
+                <button class="action-btn" data-file="Petition Response Letter" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
+            </div>
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <div class="info">
+                    <div class="label">NAPTIP Case Reference</div>
+                    <div class="type">PDF &bull; 0.3 MB</div>
+                </div>
+                <button class="action-btn" data-file="NAPTIP Case Reference" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 2: CHILD NEGLECT ========== -->
+<section class="section-card" id="sec-neglect" data-section="neglect">
+    <div class="section-number">Section 2 &bull; VAPP §3.19</div>
+    <h2><i class="fas fa-child"></i> Evidence Refuting Child Neglect</h2>
+    <div class="meta">
+        <i class="fas fa-user"></i> Albert Toluwani Olubiyi (7) &amp; Annabelle Ibukunoluwa Olubiyi (5)
+        <span class="evidence-badge"><i class="fas fa-paperclip"></i> 6 attachments</span>
     </div>
+    <p>
+        <strong>Contrary to the allegations</strong>, I have been the primary caregiver since the children's birth. 
+        The respondent (Adeola Opeyemi Olubiyi) openly stated:
+    </p>
+    <div class="quote">
+        <i class="fas fa-quote-left"></i> "My duty ended after 9 months pregnancy"
+    </div>
+    <p>
+        When asked to care for the children, she retorted, <em>"I am not a slave."</em> 
+        I have managed school runs, hospital stays, and all financial obligations, 
+        evidenced by receipts and records. The children themselves testified:
+    </p>
+    <div class="quote">
+        <i class="fas fa-quote-left"></i> "Daddy is the one caring for us."
+    </div>
+
+    <!-- Financial Evidence Grid -->
+    <div class="evidence-grid">
+        <div class="evidence-item" data-type="pdf">
+            <span class="icon"><i class="fas fa-receipt"></i></span>
+            <div class="info">
+                <div class="label">School Fee Receipts</div>
+                <div class="type">2023–2026 &bull; 4 files</div>
+            </div>
+            <button class="action-btn" data-file="School Fee Receipts" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
+        </div>
+        <div class="evidence-item" data-type="pdf">
+            <span class="icon"><i class="fas fa-hospital"></i></span>
+            <div class="info">
+                <div class="label">Hospital Bills &amp; Records</div>
+                <div class="type">7 records</div>
+            </div>
+            <button class="action-btn" data-file="Hospital Bills" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
+        </div>
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- AUDIO DOWNLOAD LIST - REPLACES THE OLD AUDIO PLAYER        -->
+    <!-- ========================================================== -->
+    <div class="audio-download-section">
+        <div class="audio-section-header">
+            <i class="fas fa-microphone"></i>
+            <span>Audio Evidence – Recorded Conversations &amp; Requests</span>
+            <span class="audio-count">4 audio files</span>
+        </div>
+
+        <div class="audio-download-list">
+            <!-- File 1 -->
+            <div class="audio-download-item">
+                <div class="audio-file-icon">
+                    <i class="fas fa-file-audio"></i>
+                </div>
+                <div class="audio-file-info">
+                    <div class="audio-file-name">june-14th-2026-my-wifes-conversation-with-my-children.mp3</div>
+                    <div class="audio-file-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span><strong>14 June 2026</strong> — Recording of the respondent's conversation with the children. Demonstrates her dismissive attitude toward their emotional needs and the children's discomfort.</span>
+                    </div>
+                    <div class="audio-file-meta">
+                        <span><i class="fas fa-calendar-day"></i> 14 June 2026</span>
+                        <span><i class="fas fa-user"></i> Adeola Opeyemi Olubiyi</span>
+                    </div>
+                </div>
+                <a href="audio/june-14th-2026-my-wifes-conversation-with-my-children.mp3" download class="audio-download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <!-- File 2 -->
+            <div class="audio-download-item">
+                <div class="audio-file-icon">
+                    <i class="fas fa-file-audio"></i>
+                </div>
+                <div class="audio-file-info">
+                    <div class="audio-file-name">meeting-for-change-june14-2025.mp3</div>
+                    <div class="audio-file-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span><strong>14 June 2025</strong> — Recording of a meeting where the respondent was confronted about her neglectful behavior. Her responses and unwillingness to change are documented.</span>
+                    </div>
+                    <div class="audio-file-meta">
+                        <span><i class="fas fa-calendar-day"></i> 14 June 2025</span>
+                        <span><i class="fas fa-user"></i> Adeola Opeyemi Olubiyi</span>
+                    </div>
+                </div>
+                <a href="audio/meeting-for-change-june14-2025.mp3" download class="audio-download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <!-- File 3 -->
+            <div class="audio-download-item">
+                <div class="audio-file-icon">
+                    <i class="fas fa-file-audio"></i>
+                </div>
+                <div class="audio-file-info">
+                    <div class="audio-file-name">my-wife-request-to-separate-may20th-2026.mp3</div>
+                    <div class="audio-file-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span><strong>20 May 2026</strong> — Recording of the respondent's formal request to separate from the marriage. Contains her expressed intentions regarding the children and custody.</span>
+                    </div>
+                    <div class="audio-file-meta">
+                        <span><i class="fas fa-calendar-day"></i> 20 May 2026</span>
+                        <span><i class="fas fa-user"></i> Adeola Opeyemi Olubiyi</span>
+                    </div>
+                </div>
+                <a href="audio/my-wife-request-to-separate-may20th-2026.mp3" download class="audio-download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <!-- File 4 -->
+            <div class="audio-download-item">
+                <div class="audio-file-icon">
+                    <i class="fas fa-file-audio"></i>
+                </div>
+                <div class="audio-file-info">
+                    <div class="audio-file-name">my-wifes-latest-complaint-and-request-sept-30th-2025.mp3</div>
+                    <div class="audio-file-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span><strong>30 September 2025</strong> — Recording of the respondent's latest complaint and subsequent request. Demonstrates her pattern of accusations without substantive evidence.</span>
+                    </div>
+                    <div class="audio-file-meta">
+                        <span><i class="fas fa-calendar-day"></i> 30 September 2025</span>
+                        <span><i class="fas fa-user"></i> Adeola Opeyemi Olubiyi</span>
+                    </div>
+                </div>
+                <a href="audio/my-wifes-latest-complaint-and-request-sept-30th-2025.mp3" download class="audio-download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END AUDIO DOWNLOAD LIST -->
+
 </section>
-<!-- ============================== -->
-<!-- END PROJECT STATUS BANNER -->
-<!-- ============================== -->
 
-    <!-- Visionary Section -->
-    <section id="visionary" class="section visionary">
-        <div class="container">
-            <div class="visionary-header">
-                <h2>The Visionary Behind GCIIP</h2>
-                <p>First-Class Honours in Business, AI, and Systems Design. One Research Question: Can Planetary Stewardship Become the Economically Rational Choice?</p>
+    <!-- ========== SECTION 3: THREATS ========== -->
+    <section class="section-card" id="sec-threats" data-section="threats">
+        <div class="section-number">Section 3 &bull; VAPP §3.7 &amp; §3.17</div>
+        <h2><i class="fas fa-triangle-exclamation"></i> Evidence of Threats &amp; Psychological Abuse</h2>
+        <div class="meta">
+            <i class="fas fa-calendar"></i> Multiple incidents 2024–2026
+            <span class="evidence-badge"><i class="fas fa-microphone"></i> 8 audio files</span>
+        </div>
+        <p>
+            The respondent has repeatedly issued threats that created fear and psychological distress. 
+            In one audio recording, she said:
+        </p>
+        <div class="quote">
+            <i class="fas fa-quote-left"></i> "I felt like stabbing you to death."
+        </div>
+        <p>
+            In another voice note, she warned:
+        </p>
+        <div class="quote">
+            <i class="fas fa-quote-left"></i> "If anything happens to the children, I will drop the Bible aside and deal with you."
+        </div>
+        <p>
+            She also demeaned me with statements such as:
+        </p>
+        <div class="quote">
+            <i class="fas fa-quote-left"></i> "If I were richer, I would treat you like paper."
+        </div>
+
+        <div class="evidence-grid">
+            <div class="evidence-item" data-type="audio">
+                <span class="icon"><i class="fas fa-microphone"></i></span>
+                <div class="info">
+                    <div class="label">Voice Note – Death Threat</div>
+                    <div class="type">MP3 &bull; 0:48</div>
+                </div>
+                <button class="action-btn" data-file="Voice Note – Threat" data-ext="audio"><i class="fas fa-play"></i> Play</button>
             </div>
-            
-            <div class="visionary-content">
-                <div class="visionary-profile">
-                    <div class="profile-image">
-                        <img src="images/kevin-photo.jpg" alt="Kevin Olubiyi">
-                        <div class="image-overlay">
-                            <span>Founder & Research Lead</span>
-                        </div>
-                    </div>
-                    <div class="profile-info">
-                        <h3>Kevin Olubiyi</h3>
-                        <p class="title">Sustainable Systems Architect & GCIIP Founder</p>
-                        <div class="quote-card">
-                            <div class="quote-icon">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <blockquote>
-                                "Happiness comes from WHAT we do. Fulfillment comes from WHY we do it."
-                                <cite>- Simon Sinek</cite>
-                            </blockquote>
-                        </div>
-                    </div>
+            <div class="evidence-item" data-type="audio">
+                <span class="icon"><i class="fas fa-microphone"></i></span>
+                <div class="info">
+                    <div class="label">Voice Note – Bible Threat</div>
+                    <div class="type">MP3 &bull; 1:12</div>
                 </div>
-                
-                <div class="visionary-story">
-                    <div class="story-tabs">
-                        <button class="story-tab active" data-tab="journey">The Journey</button>
-                        <button class="story-tab" data-tab="catalyst">The Catalyst</button>
-                        <button class="story-tab" data-tab="synthesis">The Synthesis</button>
-                        <button class="story-tab" data-tab="research">Research Partnership</button>
-                    </div>
-                    
-                    <div class="story-content">
-                        <div class="story-pane active" id="journey">
-                            <h4>From Skills to Purpose</h4>
-                            <p>My journey moved from collecting the "WHATs" to discovering my ultimate "WHY": to redesign our economic system to value planetary health.</p>
-                            <p>This conviction is backed by a BBA with First-Class Honours, synthesizing five core disciplines — Business Analytics, AI, Cybersecurity, Brand Strategy, and People Operations — along with certified expertise in global project management and cross-cultural communication. I assembled this multidisciplinary toolkit for a single purpose: to architect a viable future.</p>
-                            <p>GCIIP is the synthesis. It is the application of this advanced business architecture to a single, powerful mission: making planetary stewardship the most financially viable choice for every human on Earth.</p>
-                            <p>Now I am seeking academic partnership to test, refine, and critically evaluate this framework through rigorous research.</p>
-                        </div>
-                        
-                        <div class="story-pane" id="catalyst">
-                            <h4>Identifying the Fatal Flaw</h4>
-                            <p>While the world debated carbon pricing, I identified the core, unaddressed flaw: the complete lack of a scalable, trustworthy mechanism to verify and value the decentralized power of human action.</p>
-                            <div class="insight-card">
-                                <i class="fas fa-lightbulb"></i>
-                                <p>"The question was never 'how do we price carbon?' but 'how do we architect an entire economy that makes planetary stewardship the most rational choice for humanity?'"</p>
-                            </div>
-                        </div>
-                        
-                        <div class="story-pane" id="synthesis">
-                            <h4>Forging Eden's Legacy</h4>
-                            <p>The GCIIP provides the economic mechanics, but technology alone was insufficient. The human spirit required an equal transformation.</p>
-                            <p>This led to the creation of the Eden's Legacy Initiative and the Coram Deo Curriculum—a world-class educational framework that grounds cutting-edge science in timeless ethical principles. This is the project's true innovation: uniting economic incentive with moral purpose.</p>
-                            <div class="mandate-card">
-                                <h5>A Mandate for Stewards, Not Users</h5>
-                                <p>My vision does not see participants as "customers," but as Steward-Verifiers — a global vanguard equipped to educate the 80% and protect the system's integrity. This approach is grounded in the tipping point research of Professor Damon Centola of the University of Pennsylvania, which demonstrates that a committed minority of approximately 20-25% of a population can overturn established social conventions. By targeting the education and certification of 20% of any given population as Planetary Stewards, the Eden's Legacy Blueprint creates the conditions for a self-sustaining cultural shift — where the remaining 80% adopt new norms through social reinforcement and trusted community networks rather than force or regulation.</p>
-                                <div class="mandate-stats">
-                                    <div class="mandate-stat">
-                                        <span class="percentage">20%</span>
-                                        <span>Mobilization Target</span>
-                                    </div>
-                                    <div class="mandate-stat">
-                                        <span class="percentage">80%</span>
-                                        <span>Community Impact</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="story-pane" id="research">
-                            <h4>Accelerating Impact Through Academic Research</h4>
-                            <p>The Eden's Legacy Blueprint is a testable framework grounded in established theories of complex contagions, commons governance, and mission-oriented innovation. To advance from conceptual design to empirical validation, I am seeking a fully funded Masters or PhD position that includes a research assistantship in a department where I can study how social networks drive behavior change, how verification technologies (AI, blockchain) can support collective action, and how decentralized governance structures build trust at scale. My background bridges the social and technical. I am equally comfortable discussing Ostrom's design principles, Centola's tipping point experiments, and the architecture of verification protocols. I will let the department decide where I fit best.</p>
-                            
-                            <div class="research-benefits">
-                                <div class="benefit-card">
-                                    <div class="benefit-icon">
-                                        <i class="fas fa-university"></i>
-                                    </div>
-                                    <h5>Institutional Leadership</h5>
-                                    <p>Hosting university becomes an early incubator for human-centric carbon economy research</p>
-                                </div>
-                                
-                                <div class="benefit-card">
-                                    <div class="benefit-icon">
-                                        <i class="fas fa-network-wired"></i>
-                                    </div>
-                                    <h5>Global Network</h5>
-                                    <p>A research agenda open to shaping by the host department and its existing partner network</p>
-                                </div>
-                                
-                                <div class="benefit-card">
-                                    <div class="benefit-icon">
-                                        <i class="fas fa-flask"></i>
-                                    </div>
-                                    <h5>Cutting-edge Research</h5>
-                                    <p>Pioneering work in AI verification, blockchain integrity, and behavioral economics</p>
-                                </div>
-                            </div>
-                            
-                            <div class="callout-box">
-                                <h4>Join Me in Building the Economic OS for Our Planet</h4>
-                                <p>I'm not just seeking a degree - I'm seeking research partners to co-create the infrastructure for humanity's sustainable future. The institution that welcomes this research will position itself at the epicenter of climate tech innovation for the 21st century.</p>
-                                <a href="#contact" class="btn btn-primary">Begin a Dialogue</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <button class="action-btn" data-file="Voice Note – Bible threat" data-ext="audio"><i class="fas fa-play"></i> Play</button>
             </div>
-            
-            <div class="visionary-cta">
-                <div class="cta-content">
-                    <h3>Build What Comes Next.</h3>
-                    <p>This is more than a project; it is a legacy in the making. If you are a leader, an institution, or a nation ready to move beyond incrementalism and co-implement a system designed for true planetary transformation, the architect is ready to speak with you.</p>
-                    <div class="cta-buttons">
-                        <a href="#contact" class="btn btn-primary">Connect with the Founder</a>
-                        <a href="documents/GCIIP-Research-Proposal.pdf" class="btn btn-outline" target="_blank">Research Proposal</a>
-                    </div>
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-file-lines"></i></span>
+                <div class="info">
+                    <div class="label">Transcripts of Threats</div>
+                    <div class="type">PDF &bull; 6 pages</div>
                 </div>
+                <button class="action-btn" data-file="Transcripts" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
+            </div>
+        </div>
+
+        <!-- Audio Player -->
+        <div class="audio-wrapper" data-audio-id="threat">
+            <div class="audio-label">
+                <i class="fas fa-wave-square"></i> Audio Evidence – Threat Recording
+                <span class="audio-count">#2 of 12</span>
+            </div>
+            <div class="waveform-container" id="waveform-threat"></div>
+            <div class="audio-controls">
+                <button class="play-btn" data-audio="threat"><i class="fas fa-play"></i></button>
+                <span class="time-display" id="timeDisplay-threat">0:00 / 0:48</span>
+                <input type="range" class="seek-bar" data-audio="threat" value="0" step="0.01" />
+                <span class="verified-badge">
+                    <i class="fas fa-circle-check"></i> Verified
+                </span>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="section-header">
-                <h2>The Case for a New System</h2>
-                <p>Our current economic system is fundamentally misaligned with planetary health, treating environmental stability as an externality rather than our most critical asset.</p>
+    <!-- ========== SECTION 4: ABANDONMENT ========== -->
+    <section class="section-card" id="sec-abandon" data-section="abandon">
+        <div class="section-number">Section 4 &bull; VAPP §3.19</div>
+        <h2><i class="fas fa-door-open"></i> Evidence of Abandonment</h2>
+        <div class="meta">
+            <i class="fas fa-calendar-day"></i> 25 May 2026
+            <span class="evidence-badge"><i class="fas fa-clock"></i> Timeline recorded</span>
+        </div>
+        <p>
+            On <strong>25 May 2026</strong>, during the children's mid‑term holiday, the respondent declared:
+        </p>
+        <div class="quote">
+            <i class="fas fa-quote-left"></i> "If I pack my loads and go now, I won't need to stay with the children anymore."
+        </div>
+        <p>
+            Shortly thereafter, she abandoned the matrimonial home. Since then, her presence has 
+            been limited to occasional weekend visits, with no caregiving responsibilities. 
+            The children have been left entirely under my care.
+        </p>
+        <div class="evidence-grid">
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+                <div class="info">
+                    <div class="label">Timeline of Departure</div>
+                    <div class="type">DOCX &bull; detailed</div>
+                </div>
+                <button class="action-btn" data-file="Timeline of Departure" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>The Problem</h3>
-                    <p>Climate change has escalated from a future threat to a present-day economic and humanitarian crisis, costing the global economy billions annually and reversing decades of development.</p>
-                    <div class="stats">
-                        <div class="stat">
-                            <span class="stat-number">887M</span>
-                            <span class="stat-label">poorest people exposed to climate hazards</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">10%</span>
-                            <span class="stat-label">Projected global GDP loss by 2050 under current climate policy trajectory</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">$30B</span>
-                            <span class="stat-label">Pakistan floods damage (2022)</span>
-                        </div>
-                    </div>
-                    <h3>The Solution</h3>
-                    <p>GCIIP proposes a paradigm shift: a decentralized, technology-driven economic operating system that directly financially rewards verifiable environmental stewardship.</p>
-                    <p>By creating a new, high-integrity asset class — the Verified Green Act (VGA) — GCIIP aligns economic incentive with ecological integrity, transforming citizens from passive observers into active, rewarded stakeholders in planetary health.</p>
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <div class="info">
+                    <div class="label">Witness Statements</div>
+                    <div class="type">2 witnesses</div>
                 </div>
-                <div class="about-image">
-                    <img src="images/about-image.jpg" alt="Climate Impact">
-                </div>
+                <button class="action-btn" data-file="Witness Statements" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
             </div>
         </div>
     </section>
 
-        <!-- Solution Section -->
-    <section id="solution" class="section solution">
-        <div class="container">
-            <div class="section-header">
-                <h2>The GCIIP Solution</h2>
-                <p>A complete ecosystem comprising both an economic engine and a human capital engine designed for planetary resilience and inclusive growth.</p>
+    <!-- ========== SECTION 5: FALSE ALLEGATIONS ========== -->
+    <section class="section-card" id="sec-false" data-section="false">
+        <div class="section-number">Section 5 &bull; VAPP §3.11</div>
+        <h2><i class="fas fa-file-circle-exclamation"></i> Refuting False Allegations</h2>
+        <div class="meta">
+            <i class="fas fa-ban"></i> Contradicted by financial records
+        </div>
+        <p>
+            The respondent claimed she bore the family's financial expenses. This allegation is 
+            directly contradicted by receipts and bank records showing that I paid rent, 
+            school fees, and hospital bills.
+        </p>
+        <div class="evidence-grid">
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-receipt"></i></span>
+                <div class="info">
+                    <div class="label">Rent Agreements</div>
+                    <div class="type">2019–2026</div>
+                </div>
+                <button class="action-btn" data-file="Rent Agreements" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
             </div>
-            <div class="solution-tabs">
-                <div class="tab-buttons">
-                    <button class="tab-btn active" data-tab="tech-stack">Technology Stack</button>
-                    <button class="tab-btn" data-tab="human-capital">Human Capital Engine</button>
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-building-columns"></i></span>
+                <div class="info">
+                    <div class="label">Bank Statements</div>
+                    <div class="type">PDF &bull; 12 pages</div>
                 </div>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="tech-stack">
-                        <p class="stack-disclaimer">
-                            The five-layer architecture below describes GCIIP's designed
-                            technical stack, currently in development — not a deployed system.
-                        </p>
-                        <div class="tech-stack">
-                            <div class="stack-layer">
-                                <div class="layer-header">
-                                    <span class="layer-number">1</span>
-                                    <h3>Human Interface</h3>
-                                </div>
-                                <p>Multi-channel access for onboarding, action reporting, and portfolio management.</p>
-                                <div class="layer-tech">
-                                    <span class="tech-tag">Web3</span>
-                                    <span class="tech-tag">Mobile App</span>
-                                    <span class="tech-tag">USSD Service</span>
-                                </div>
-                            </div>
-                            <div class="stack-layer">
-                                <div class="layer-header">
-                                    <span class="layer-number">2</span>
-                                    <h3>AI Verification</h3>
-                                </div>
-                                <p>Automatically verifies Green Acts using satellite imagery, IoT sensor data, and user-submitted proof.</p>
-                                <div class="layer-tech">
-                                    <span class="tech-tag">Computer Vision</span>
-                                    <span class="tech-tag">Machine Learning</span>
-                                    <span class="tech-tag">Liveness Detection</span>
-                                </div>
-                            </div>
-                            <div class="stack-layer">
-                                <div class="layer-header">
-                                    <span class="layer-number">3</span>
-                                    <h3>Integrity Core</h3>
-                                </div>
-                                <p>Creates an immutable, public record of every VGA, guaranteeing uniqueness and preventing fraud.</p>
-                                <div class="layer-tech">
-                                    <span class="tech-tag">Permissioned Blockchain</span>
-                                </div>
-                            </div>
-                            <div class="stack-layer">
-                                <div class="layer-header">
-                                    <span class="layer-number">4</span>
-                                    <h3>Economic Engine</h3>
-                                </div>
-                                <p>Facilitates trade of VGAs, connects users with sustainable products, and funds education.</p>
-                                <div class="layer-tech">
-                                    <span class="tech-tag">DeFi Protocols</span>
-                                    <span class="tech-tag">E-commerce</span>
-                                    <span class="tech-tag">Tokenomics</span>
-                                </div>
-                            </div>
-                            <div class="stack-layer">
-                                <div class="layer-header">
-                                    <span class="layer-number">5</span>
-                                    <h3>Governance</h3>
-                                </div>
-                                <p>Oversees protocol evolution, dispute resolution, academic standards, and upholds system principles.</p>
-                                <div class="layer-tech">
-                                    <span class="tech-tag">DAO/Consortium Model</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="human-capital">
-                        <div class="human-capital">
-                            <div class="capital-item">
-                                <div class="capital-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <div class="capital-content">
-                                    <h3>Eden's Legacy Academy</h3>
-                                    <p>Will deliver the "Coram Deo Curriculum," a program in development leading to a Diploma in Applied Planetary Stewardship.</p>
-                                </div>
-                            </div>
-                            <div class="capital-item">
-                                <div class="capital-icon">
-                                    <i class="fas fa-university"></i>
-                                </div>
-                                <div class="capital-content">
-                                    <h3>Global Stewardship Education Consortium (GSEC)</h3>
-                                    <p>A planned partnership with universities across six continents, currently seeking founding partners, designed to provide academic credibility and global recognition.</p>
-                                </div>
-                            </div>
-                            <div class="capital-item">
-                                <div class="capital-icon">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <div class="capital-content">
-                                    <h3>20% Mobilization Mandate</h3>
-                                    <p>Based on the tipping point research of <a href="https://www.asc.upenn.edu/people/faculty/damon-centola-phd" target="_blank" rel="noopener noreferrer">Professor Damon Centola of the University of Pennsylvania</a>, which found that <a href="https://ndg.asc.upenn.edu/experiments/creating-critical-mass/" target="_blank" rel="noopener noreferrer">a committed minority of 20-25% of a population can overturn established social conventions</a>, the Eden's Legacy Blueprint targets the education and certification of 20% of any given population as Planetary Stewards to create a self-sustaining cultural shift.</p>
-                                </div>
-                            </div>
-                            <div class="capital-item">
-                                <div class="capital-icon">
-                                    <i class="fas fa-cube"></i>
-                                </div>
-                                <div class="capital-content">
-                                    <h3>AwareDAO Platform</h3>
-                                    <p>The decentralized Web3 platform designed for verified Stewards, intended to host Veritas Portfolios and community coordination tools. Domain reserved; platform not yet built</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <button class="action-btn" data-file="Bank Statements" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
             </div>
         </div>
     </section>
 
-    <!-- VGA Section -->
-    <section id="vga" class="section vga">
-        <div class="container">
-            <div class="section-header">
-                <h2>Verified Green Act (VGA)</h2>
-                <p>The Unit of Transformation - A standardized, digital token representing 1 kg of CO₂e avoided or sequestered through a verified human-driven activity.</p>
+    <!-- ========== SECTION 6: ECONOMIC ABUSE ========== -->
+    <section class="section-card" id="sec-econ" data-section="econ">
+        <div class="section-number">Section 6 &bull; VAPP §3.15</div>
+        <h2><i class="fas fa-coins"></i> Evidence of Economic Abuse</h2>
+        <div class="meta">
+            <i class="fas fa-store"></i> Joint business taken over and collapsed
+        </div>
+        <p>
+            I built a joint business, which was later taken over by the respondent. 
+            Under her control, the business collapsed, depriving the family of income and stability.
+        </p>
+        <div class="evidence-grid">
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-certificate"></i></span>
+                <div class="info">
+                    <div class="label">Business Registration</div>
+                    <div class="type">CAC &bull; 2018</div>
+                </div>
+                <button class="action-btn" data-file="Business Registration" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
             </div>
-            <div class="vga-features">
-                <div class="vga-feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-fingerprint"></i>
-                    </div>
-                    <h3>Unique & Non-Fungible</h3>
-                    <p>Cryptographically tied to a specific, irreplaceable action.</p>
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-chart-line"></i></span>
+                <div class="info">
+                    <div class="label">Turnover Records</div>
+                    <div class="type">Excel &bull; 2018–2022</div>
                 </div>
-                <div class="vga-feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Transparently Verifiable</h3>
-                    <p>Backed by an auditable proof-of-impact through the Veritas Protocol.</p>
-                </div>
-                <div class="vga-feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Liquid & Tradeable</h3>
-                    <p>A financial asset on an open marketplace.</p>
-                </div>
-                <div class="vga-feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Impact-Additive</h3>
-                    <p>Tied to methodologies ensuring real, permanent benefits.</p>
-                </div>
+                <button class="action-btn" data-file="Turnover Records" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
             </div>
-            <p class="vga-disclaimer">
-                VGA is a conceptual instrument currently under design. Its legal and
-                regulatory classification has not yet been determined and will require
-                legal review prior to any public launch.
-            </p>
-            <div class="vga-examples">
-                <h3>Illustrative VGA Activities</h3>
-                <div class="examples-grid">
-                    <div class="example-card">
-                        <div class="example-header">
-                            <h4>Walk 5 km instead of driving</h4>
-                            <span class="vga-count">1 VGA</span>
-                        </div>
-                        <p>GPS tracking; baseline: petrol car</p>
-                        <div class="example-impact">
-                            <strong>Impact:</strong> Reduces Urban Smog & Heat Island Effect
-                        </div>
-                    </div>
-                    <div class="example-card">
-                        <div class="example-header">
-                            <h4>Cycle 10 km instead of driving</h4>
-                            <span class="vga-count">2 VGAs</span>
-                        </div>
-                        <p>GPS tracking: an efficient alternative</p>
-                        <div class="example-impact">
-                            <strong>Impact:</strong> Reduces Urban Smog & Heat Island Effect
-                        </div>
-                    </div>
-                    <div class="example-card">
-                        <div class="example-header">
-                            <h4>Work remotely 1 day/week</h4>
-                            <span class="vga-count">5 VGAs/week</span>
-                        </div>
-                        <p>Employer verification & commute distance baseline</p>
-                        <div class="example-impact">
-                            <strong>Impact:</strong> Reduces Peak Traffic & Oil Dependency
-                        </div>
-                    </div>
-                    <div class="example-card">
-                        <div class="example-header">
-                            <h4>Plant one tree</h4>
-                            <span class="vga-count">22 VGAs/year</span>
-                        </div>
-                        <p>Satellite imagery + time-series analysis</p>
-                        <div class="example-impact">
-                            <strong>Impact:</strong> Multi-Threat Defense (erosion, floods, wildfires)
-                        </div>
-                    </div>
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-triangle-exclamation"></i></span>
+                <div class="info">
+                    <div class="label">Evidence of Collapse</div>
+                    <div class="type">PDF &bull; 5 pages</div>
                 </div>
+                <button class="action-btn" data-file="Evidence of Collapse" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
             </div>
         </div>
     </section>
 
-    <!-- Ecosystem Section -->
-    <section id="ecosystem" class="section ecosystem">
-        <div class="container">
-            <div class="section-header">
-                <h2>The GCIIP Ecosystem</h2>
-                <p>A synergistic partnership model designed to create a resilient, inclusive, and verifiably sustainable economy — the following describes what each partner category would gain once the platform is operational.</p>
+    <!-- ========== SECTION 7: CHILDREN'S ACHIEVEMENTS ========== -->
+    <section class="section-card" id="sec-achievements" data-section="achievements">
+        <div class="section-number">Section 7</div>
+        <h2><i class="fas fa-trophy"></i> Children's Achievements Under Sole Care</h2>
+        <div class="meta">
+            <i class="fas fa-star"></i> Thriving under my care despite adversity
+            <span class="evidence-badge"><i class="fas fa-certificate"></i> 8 certificates</span>
+        </div>
+        <p>
+            <strong>These achievements directly refute any claim of neglect.</strong> The children have 
+            thrived under my sole care, excelling academically and in extracurricular activities.
+        </p>
+
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <h3><i class="fas fa-crown"></i> Albert Toluwani Olubiyi (7 years old)</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Youngest EFCC Ambassador</li>
+                    <li><i class="fas fa-check-circle"></i> Won brand‑new Android phone at Primary 2</li>
+                    <li><i class="fas fa-check-circle"></i> Niger State Bible Quiz winner</li>
+                    <li><i class="fas fa-check-circle"></i> North Central regional – 3rd place</li>
+                    <li><i class="fas fa-check-circle"></i> Bible read cover‑to‑cover 4 times (on 5th)</li>
+                </ul>
             </div>
-            <div class="ecosystem-grid">
-                <div class="ecosystem-card">
-                    <div class="card-icon">
-                        <i class="fas fa-flag"></i>
-                    </div>
-                    <h3>National Governments</h3>
-                    <ul>
-                        <li>Achieve NDCs through citizen mobilization</li>
-                        <li>Boost "Green GDP" with citizen-driven environmental assets</li>
-                        <li>Enhance resilience with nature-based solutions</li>
-                        <li>Attract ESG-focused investment</li>
-                    </ul>
+            <div class="achievement-card">
+                <h3><i class="fas fa-star"></i> Annabelle Ibukunoluwa Olubiyi (5 years old)</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Strong academic performance</li>
+                    <li><i class="fas fa-check-circle"></i> Excellent results in school</li>
+                    <li><i class="fas fa-check-circle"></i> Thriving in supportive environment</li>
+                </ul>
+                <div class="achievement-note">
+                    <i class="fas fa-info-circle"></i> Their mother has shown no interest in these achievements.
                 </div>
-                <div class="ecosystem-card">
-                    <div class="card-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Corporations & Financial Institutions</h3>
-                    <ul>
-                        <li>Source high-integrity carbon credits (VGAs)</li>
-                        <li>Participate in a new asset class</li>
-                        <li>Engage with sustainability-conscious consumers</li>
-                        <li>Access certified Planetary Stewards talent</li>
-                    </ul>
+            </div>
+        </div>
+
+        <div class="evidence-grid">
+            <div class="evidence-item" data-type="image">
+                <span class="icon"><i class="fas fa-image"></i></span>
+                <div class="info">
+                    <div class="label">Certificates &amp; Photos</div>
+                    <div class="type">8 images</div>
                 </div>
-                <div class="ecosystem-card">
-                    <div class="card-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Academic & Research Institutions</h3>
-                    <ul>
-                        <li>Access a real-world platform for research</li>
-                        <li>Co-develop next-generation climate policy</li>
-                        <li>Partner in curriculum development</li>
-                        <li>Offer students certification and impact opportunities</li>
-                    </ul>
+                <button class="action-btn" data-file="Certificates" data-ext="image"><i class="fas fa-eye"></i> View</button>
+            </div>
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <div class="info">
+                    <div class="label">School Results</div>
+                    <div class="type">PDF &bull; 3 reports</div>
                 </div>
-                <div class="ecosystem-card">
-                    <div class="card-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Individuals & Communities</h3>
-                    <ul>
-                        <li>Earn micro-income for green actions</li>
-                        <li>Access free world-class education</li>
-                        <li>Transition from climate victims to paid stewards</li>
-                        <li>Build community resilience through trained networks</li>
-                    </ul>
-                </div>
+                <button class="action-btn" data-file="School Results" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
             </div>
         </div>
     </section>
 
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="section roadmap">
-        <div class="container">
-            <div class="section-header">
-                <h2>Implementation Roadmap</h2>
-                <p>From blueprint to global impact - our phased approach to building a resilient, inclusive, net-zero global economy.</p>
+    <!-- ========== SECTION 8: GENERATIONAL NEGLECT ========== -->
+    <section class="section-card" id="sec-gen" data-section="gen">
+        <div class="section-number">Section 8</div>
+        <h2><i class="fas fa-tree"></i> Generational Pattern of Neglect</h2>
+        <div class="meta">
+            <i class="fas fa-history"></i> Context for understanding the respondent's behavior
+        </div>
+        <p>
+            The respondent's neglect appears rooted in her upbringing. At age 6, she was sent 
+            by her mother to live with an aunt, who used her as a servant. Later, she had a son 
+            at 17, who was poorly raised and became wayward.
+        </p>
+        <p>
+            Community records show that the grandmother was forced to either leave or send the 
+            boy away due to misconduct. He abandoned his OND program and went to live with his 
+            father, who had never been involved in his upbringing.
+        </p>
+        <div class="evidence-grid">
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-users"></i></span>
+                <div class="info">
+                    <div class="label">Community Statements</div>
+                    <div class="type">PDF &bull; 4 pages</div>
+                </div>
+                <button class="action-btn" data-file="Community Statements" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
             </div>
-            <div class="roadmap-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-phase">Phase 1</div>
-                        <h3>Consortium Building & Ecosystem Design</h3>
-                        <p class="timeline-duration">Now – 12 months</p>
-                        <ul>
-                            <li>Finalize GCIIP white paper and technical specifications</li>
-                            <li>Establish founding GSEC with 3-5 university partners</li>
-                            <li>Secure initial funding and identify first pilot nation</li>
-                            <li>Develop core AwareDAO platform and Veritas Protocol</li>
-                        </ul>
-                    </div>
+            <div class="evidence-item" data-type="pdf">
+                <span class="icon"><i class="fas fa-file-lines"></i></span>
+                <div class="info">
+                    <div class="label">Family Records</div>
+                    <div class="type">PDF &bull; 2 pages</div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-phase">Phase 2</div>
-                        <h3>Technology Build & National Pilot</h3>
-                        <p class="timeline-duration">12 – 36 months</p>
-                        <ul>
-                            <li>Develop and test integrated GCIIP platform and Eden's Legacy Academy</li>
-                            <li>Launch full-scale national pilot with 1M+ users</li>
-                            <li>Onboard corporate VGA buyers and green vendors</li>
-                            <li>Issue first Diplomas in Applied Planetary Stewardship</li>
-                        </ul>
-                    </div>
+                <button class="action-btn" data-file="Family Records" data-ext="pdf"><i class="fas fa-eye"></i> Preview</button>
+            </div>
+            <div class="evidence-item" data-type="audio">
+                <span class="icon"><i class="fas fa-microphone"></i></span>
+                <div class="info">
+                    <div class="label">Testimonies</div>
+                    <div class="type">Audio &bull; 3 files</div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-phase">Phase 3</div>
-                        <h3>Global Scaling & System Integration</h3>
-                        <p class="timeline-duration">36 – 60 months</p>
-                        <ul>
-                            <li>Expand to 3–5 new nations across diverse economic and ecological zones</li>
-                            <li>Integrate VGAs into major international carbon market frameworks</li>
-                            <li>Establish GCIIP as foundational infrastructure for global climate action</li>
-                            <li>Launch global steward verification network across all inhabited continents</li>
-                        </ul>
-                    </div>
-                </div>
+                <button class="action-btn" data-file="Testimonies" data-ext="audio"><i class="fas fa-play"></i> Play</button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Join the Consortium</h2>
-                <p>The blueprint is complete. The platform is in active design. We're seeking partners and academic collaborators to help build it into reality.</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact & Partnerships</h3>
-                    <div class="contact-item">
-                        <h4>Sustainable System Architect, Founder & Research Lead</h4>
-                        <p>Kevin Olubiyi</p>
-                        <p><i class="fas fa-envelope"></i> kevin.olubiyi@gciip.org</p>
-                        <p>
-                            <a href="https://www.linkedin.com/in/kevinolubiyi-ai" target="_blank" rel="noopener noreferrer" class="linkedin-link">
-                                <i class="fab fa-linkedin"></i> linkedin.com/in/kevinolubiyi-ai
-                            </a>
-                        </p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Academic Partnerships</h4>
-                        <p><i class="fas fa-envelope"></i> consortium@gciip.org</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>General Inquiries</h4>
-                        <p><i class="fas fa-envelope"></i> info@gciip.org</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/company/global-carbon-integrity-and-incentive-platform-gciip" target="_blank" rel="noopener noreferrer" title="Follow GCIIP on LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/kevinolubiyi-ai" target="_blank" rel="noopener noreferrer" title="Connect with Kevin Olubiyi">
-                            <i class="fas fa-user"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Send Us a Message</h3>
-                    <form id="contactForm" action="https://formspree.io/f/mblebaoe" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="organization">Organization</label>
-                            <input type="text" id="organization" name="organization" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="interest">Area of Interest</label>
-                            <select id="interest" name="interest" required>
-                                <option value="">Select an option</option>
-                                <option value="government">Government Partnership</option>
-                                <option value="corporate">Corporate Partnership</option>
-                                <option value="academic">Academic Partnership</option>
-                                <option value="philanthropy">Philanthropic Support</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-            <div class="official-domains">
-                <h3>Official Digital Infrastructure</h3>
-                <div class="domains">
-                    <a href="http://gciip.org/" target="_blank">GCIIP.org</a>
-                    <a href="http://gseconsortium.org/" target="_blank">GSEConsortium.org</a>
-                    <a href="http://awaredao.com/" target="_blank">AwareDAO.com</a>
-                </div>
-                <p class="domain-note">These domains have been purchased and reserved for GCIIP's future digital infrastructure. No platform is currently live at any of them — this GitHub-hosted site is the current public design preview. Founding partners will have exclusive input on initial use-cases and featured content ahead of launch.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/logo.png" alt="GCIIP Logo">
-                    <span>GCIIP</span>
-                </div>
-                <div class="footer-links">
-                    <a href="#about">About</a>
-                    <a href="#solution">Solution</a>
-                    <a href="#vga">VGA</a>
-                    <a href="#ecosystem">Ecosystem</a>
-                    <a href="#roadmap">Roadmap</a>
-                    <a href="#contact">Contact</a>
-                    <a href="https://www.linkedin.com/company/global-carbon-integrity-and-incentive-platform-gciip" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i> Follow Us
-                    </a>
-                </div>
-                <div class="footer-copyright">
-                    <p>&copy; 2026 GCIIP Foundation. All rights reserved.</p>
-                </div>
-            </div>
+    <!-- ========== CONCLUSION ========== -->
+    <section class="section-card" id="sec-conclusion" data-section="conclusion">
+        <div class="section-number">Conclusion</div>
+        <h2><i class="fas fa-gavel"></i> Conclusion &amp; Prayer for Justice</h2>
+        <div class="meta">
+            <i class="fas fa-scale-balanced"></i> Submitted to NAPTIP for Investigation
         </div>
         
-        <div class="footer-note">
-            <div class="container">
-                <p class="disclaimer">GCIIP is a research framework in development, not a deployed platform. The technical blueprint, master plan, and ecosystem architecture are drafted and open for academic and partner review. Domains are reserved for future use.</p>
+        <div class="conclusion-box">
+            <p>
+                The evidence presented above demonstrates that the allegations of neglect, abandonment, 
+                and abuse against me, <strong>Kevin Olubiyi</strong>, are unfounded. In contrast, the 
+                respondent, <strong>Adeola Opeyemi Olubiyi</strong>, has consistently:
+            </p>
+            <ul class="conclusion-list">
+                <li><i class="fas fa-times-circle"></i> Refused childcare responsibilities</li>
+                <li><i class="fas fa-times-circle"></i> Issued threats of violence</li>
+                <li><i class="fas fa-times-circle"></i> Abandoned the matrimonial home</li>
+                <li><i class="fas fa-times-circle"></i> Made false financial claims</li>
+                <li><i class="fas fa-times-circle"></i> Engaged in economic abuse</li>
+            </ul>
+            <p>
+                The children — <strong>Albert Toluwani Olubiyi</strong> and <strong>Annabelle Ibukunoluwa Olubiyi</strong> — 
+                have thrived under my sole care, achieving remarkable milestones that directly refute 
+                any claim of neglect.
+            </p>
+            <p style="margin-top:0.8rem;">
+                <strong>I respectfully submit this evidence to the NAPTIP Investigation Department</strong> 
+                to aid and expedite proper judgment in this matter. The welfare and safety of my children 
+                remain my highest priority.
+            </p>
+        </div>
+
+        <div class="petitioner-footer">
+            <div>
+                <strong>Kevin Olubiyi</strong>
+                <span>Respondent</span>
+            </div>
+            <div style="text-align:right;">
+                <span>Response Filed: 26 August 2026</span>
+                <span>Abuja, Nigeria</span>
             </div>
         </div>
+
+        <!-- Investigation Team Section -->
+        <div class="investigation-notice">
+            <i class="fas fa-microscope"></i>
+            <div>
+                <strong>For the NAPTIP Investigation Team</strong>
+                <span>All evidence is organized for your review. Audio files, documents, and images are available for preview above. Please contact me for any additional information or clarification.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+        <span>&copy; 2026 Kevin Olubiyi &bull; Evidence Response</span>
+        <span>
+            <i class="fas fa-lock"></i> Confidential &bull; For NAPTIP Investigation
+        </span>
     </footer>
 
-    <script src="js/script.js"></script>
+</div>
+
+<!-- ============================================================ -->
+<!-- GCIIP PROFILE SECTION - Minimal Introduction                 -->
+<!-- ============================================================ -->
+<section class="gciip-profile-section">
+    <div class="gciip-profile-container">
+        <div class="gciip-header">
+            <div class="gciip-badge"><i class="fas fa-globe-americas"></i> Created by</div>
+            <h2 class="gciip-name">Kevin <span>Olubiyi</span></h2>
+            <div class="gciip-title">Full Stack Developer &bull; Cybersecurity &amp; AI Professional</div>
+            <div class="gciip-title-secondary">Sustainable Systems Architect &bull; Founder, GCIIP</div>
+        </div>
+
+        <div class="gciip-divider"></div>
+
+        <div class="gciip-mission">
+            <h3><i class="fas fa-leaf"></i> The Global Carbon Integrity &amp; Incentive Platform</h3>
+            <p class="gciip-vision-text">
+                <strong>GCIIP</strong> is a decentralized, technology-driven economic operating system that 
+                directly financially rewards verifiable environmental stewardship — transforming 
+                citizens from passive observers into active, rewarded stakeholders in planetary health.
+            </p>
+        </div>
+
+        <div class="gciip-benefits-grid">
+            <div class="gciip-benefit">
+                <div class="benefit-icon"><i class="fas fa-coins"></i></div>
+                <div class="benefit-content">
+                    <h4>Verified Green Acts (VGAs)</h4>
+                    <p>A new high-integrity asset class that transforms everyday environmental actions into financial value.</p>
+                </div>
+            </div>
+            <div class="gciip-benefit">
+                <div class="benefit-icon"><i class="fas fa-users"></i></div>
+                <div class="benefit-content">
+                    <h4>Eden's Legacy Initiative</h4>
+                    <p>Mobilizing 20% of the global population as certified Planetary Stewards to create a self-sustaining cultural shift.</p>
+                </div>
+            </div>
+            <div class="gciip-benefit">
+                <div class="benefit-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="benefit-content">
+                    <h4>Coram Deo Curriculum</h4>
+                    <p>A world-class educational framework grounding cutting-edge science in timeless ethical principles.</p>
+                </div>
+            </div>
+            <div class="gciip-benefit">
+                <div class="benefit-icon"><i class="fas fa-microchip"></i></div>
+                <div class="benefit-content">
+                    <h4>AI Verification &amp; Blockchain Integrity</h4>
+                    <p>Automated verification of Green Acts using satellite imagery, IoT data, and machine learning.</p>
+                </div>
+            </div>
+            <div class="gciip-benefit">
+                <div class="benefit-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                <div class="benefit-content">
+                    <h4>Economic Empowerment</h4>
+                    <p>Creating micro-income opportunities for individuals and communities through verified environmental actions.</p>
+                </div>
+            </div>
+            <div class="gciip-benefit">
+                <div class="benefit-icon"><i class="fas fa-globe-africa"></i></div>
+                <div class="benefit-content">
+                    <h4>Global Climate Impact</h4>
+                    <p>Accelerating the transition to a net-zero economy by making planetary stewardship the most rational economic choice.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gciip-quote">
+            <i class="fas fa-quote-left"></i>
+            <p>"The question was never 'how do we price carbon?' but 'how do we architect an entire economy that makes planetary stewardship the most rational choice for humanity?'"</p>
+            <span class="quote-author">— Kevin Olubiyi, GCIIP Founder</span>
+        </div>
+
+        <div class="gciip-cta-wrapper">
+            <a href="https://kevinolubiyi.github.io/GCIIP/" target="_blank" class="gciip-cta-btn">
+                <i class="fas fa-external-link-alt"></i> Explore GCIIP — Building the Economic OS for Our Planet
+            </a>
+        </div>
+
+        <div class="gciip-footer">
+            <span>Site created by Kevin Olubiyi &bull; 2026</span>
+            <span><i class="fas fa-envelope"></i> kevin.olubiyi@gciip.org</span>
+        </div>
+    </div>
+</section>
+
+<!-- ========== MODAL ========== -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+        <button class="close-modal" id="closeModal"><i class="fas fa-xmark"></i></button>
+        <h3 id="modalTitle">Document Preview</h3>
+        <div id="modalBody">
+            <div class="preview-placeholder">
+                <i class="fas fa-file-pdf"></i>
+                <div class="file-name" id="modalFileName">document.pdf</div>
+                <div class="preview-hint">Preview coming soon</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
