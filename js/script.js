@@ -38,18 +38,15 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentSlide - 1);
     }
 
-    // Auto slide every 5 seconds
     function startSlideShow() {
         slideInterval = setInterval(nextSlide, 5000);
     }
 
-    // Reset interval on manual navigation
     function resetInterval() {
         clearInterval(slideInterval);
         startSlideShow();
     }
 
-    // Initialize slider if elements exist
     if (slides.length > 0) {
         startSlideShow();
         
@@ -67,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
         
-        // Dot navigation
         dots.forEach((dot, index) => {
             dot.addEventListener('click', function() {
                 showSlide(index);
@@ -100,15 +96,12 @@ document.addEventListener('DOMContentLoaded', function() {
         tab.addEventListener('click', function() {
             const target = this.getAttribute('data-tab');
             
-            // Update tabs
             storyTabs.forEach(t => t.classList.remove('active'));
             this.classList.add('active');
             
-            // Update panes
             storyPanes.forEach(pane => {
                 pane.classList.remove('active');
                 if (pane.id === target) {
-                    // Add slight delay for smooth animation
                     setTimeout(() => {
                         pane.classList.add('active');
                     }, 50);
@@ -137,7 +130,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Profile image hover effect
     const profileImage = document.querySelector('.profile-image');
     if (profileImage) {
         profileImage.addEventListener('mouseenter', function() {
@@ -167,7 +159,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
                 
-                // Close mobile menu if open
                 if (navList && navList.classList.contains('active')) {
                     navList.classList.remove('active');
                     mobileToggle.classList.remove('active');
@@ -183,7 +174,6 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            // Basic form validation
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const organization = document.getElementById('organization').value;
@@ -195,14 +185,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Get submit button and change text to "Sending..."
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
             
             try {
-                // Send to Formspree
                 const response = await fetch(this.action, {
                     method: 'POST',
                     body: new FormData(this),
@@ -220,12 +208,11 @@ document.addEventListener('DOMContentLoaded', function() {
             } catch (error) {
                 alert('There was an error submitting your form. Please try again or email us directly.');
             } finally {
-                // Reset button text
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
             }
         });
-    } // REMOVED THE EXTRA CLOSING BRACE THAT WAS HERE
+    }
 
     // ===== HEADER SCROLL EFFECT =====
     window.addEventListener('scroll', function() {
@@ -255,10 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Initial call
     animateOnScroll();
-    
-    // Listen for scroll events
     window.addEventListener('scroll', animateOnScroll);
 
     // ===== INTERSECTION OBSERVER FOR ADVANCED ANIMATIONS =====
@@ -270,21 +254,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Animate percentages when visionary CTA comes into view
                 if (entry.target.classList.contains('visionary-cta')) {
                     animatePercentages();
                 }
                 
-                // Add animation class
                 entry.target.classList.add('animate-in');
-                
-                // Stop observing after animation
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Observe visionary section elements
     const visionaryElements = document.querySelectorAll('.visionary-profile, .visionary-story, .visionary-cta');
     visionaryElements.forEach(el => observer.observe(el));
 
@@ -308,40 +287,38 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===== COUNTER ANIMATION FOR STATISTICS =====
-function animateCounters() {
-    const counters = document.querySelectorAll('.counter');
-    counters.forEach(counter => {
-        const target = parseInt(counter.getAttribute('data-target'), 10);
-        const increment = target / 100;
-        let current = 0;
+    function animateCounters() {
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'), 10);
+            const increment = target / 100;
+            let current = 0;
 
-        const updateCounter = () => {
-            if (current < target) {
-                current += increment;
-                counter.textContent = Math.ceil(current).toLocaleString();
-                setTimeout(updateCounter, 20);
-            } else {
-                counter.textContent = target.toLocaleString();
-            }
-        };
-        updateCounter();
-    });
-}
-
-// Initialize counters when stats section comes into view
-const statsSection = document.querySelector('.stats');
-if (statsSection) {
-    const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounters();
-                statsObserver.unobserve(entry.target);
-            }
+            const updateCounter = () => {
+                if (current < target) {
+                    current += increment;
+                    counter.textContent = Math.ceil(current).toLocaleString();
+                    setTimeout(updateCounter, 20);
+                } else {
+                    counter.textContent = target.toLocaleString();
+                }
+            };
+            updateCounter();
         });
-    }, { threshold: 0.5 });
+    }
 
-    statsObserver.observe(statsSection);
-}
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) {
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statsObserver.observe(statsSection);
     }
 
     // ===== LAZY LOADING FOR IMAGES =====
@@ -366,7 +343,6 @@ if (statsSection) {
     const formInputs = document.querySelectorAll('.form-group input, .form-group select, .form-group textarea');
     
     formInputs.forEach(input => {
-        // Add focus effects
         input.addEventListener('focus', function() {
             this.parentElement.classList.add('focused');
         });
@@ -377,7 +353,6 @@ if (statsSection) {
             }
         });
         
-        // Check initial state
         if (input.value !== '') {
             input.parentElement.classList.add('focused');
         }
@@ -397,7 +372,6 @@ if (statsSection) {
         });
     });
     
-    // Show/hide back to top button
     window.addEventListener('scroll', function() {
         if (window.scrollY > 500) {
             backToTop.classList.add('visible');
@@ -416,6 +390,5 @@ window.addEventListener('resize', function() {
 
 // ===== LOAD EVENT HANDLER =====
 window.addEventListener('load', function() {
-    // Ensure all resources are loaded
     document.body.classList.add('loaded');
 });
